@@ -1,0 +1,1 @@
+mongodb+srv://admin:admin123456@strapi-ecommerce.8xflo.mongodb.net/ecommerce?retryWrites=true&w=majority
