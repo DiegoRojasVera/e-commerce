@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet, Image, Dimensions } from 'react-native'
+import { StyleSheet, Image, Dimensions, LogBox } from 'react-native'
 import Carousel, { Pagination } from "react-native-snap-carousel";
 import { size } from "lodash";
 import { API_URL } from '../../Utils/constants';
@@ -11,7 +11,7 @@ const height = 400;
 export default function CarouselImages(props) {
     const { images } = props;
     const [imageActive, setImageActive] = useState(0)
-
+    
     const renderItem = ({ item }) => {
         return (
             <Image

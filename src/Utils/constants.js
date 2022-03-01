@@ -1,4 +1,4 @@
-export const API_URL = "https://ecommerce-cliente.herokuapp.com";
+export const API_URL = "https://ecommerceservercliente.herokuapp.com";
 // export const API_URL = "http://181.238.224.230:1337";
 // export const API_URL = "http://192.168.100.4:1337";
 // export const API_URL = "http://192.168.0.12:1337";
