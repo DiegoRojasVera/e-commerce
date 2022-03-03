@@ -7,10 +7,8 @@ import { API_URL } from "../../Utils/constants";
 export default function ListPRoduct(props) {
     const { products } = props;
     const navigation = useNavigation();
-
     const goToProduct = (id) => {
         navigation.push("product", { idProduct: id })
-
     }
     return (
         <View style={styles.container}>
@@ -24,8 +22,9 @@ export default function ListPRoduct(props) {
                             <Image
                                 style={styles.image}
                                 source={{
-                                    uri: `${API_URL}${product.main_image.url}`,
-                                }}
+                                    uri: `${product.main_image.url}`,
+                                }
+                            }
                             />
                             <Text
                                 style={styles.name}

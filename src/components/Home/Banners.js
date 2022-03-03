@@ -11,8 +11,8 @@ const height = 160
 
 export default function Banner() {
 
-    const [banners, setBanners] = useState(null)
-    const [bannerActive, setBannerActive] = useState(0)
+    const [banners, setBanners] = useState(null);
+    const [bannerActive, setBannerActive] = useState(0);
     const navigation = useNavigation();
 
     useEffect(() => {
@@ -29,10 +29,10 @@ export default function Banner() {
         return (
 
             <TouchableWithoutFeedback onPress={() => { goToProduct(item.product._id) }}>
-                <Image style={styles.carousel} source={{ uri: `${API_URL}${item.banner.url}` }} />
+                <Image style={styles.carousel} source={{ uri: `${item.banner.url}` }} />
             </TouchableWithoutFeedback>
         )
-
+        console.log(uri);
     }
 
     const goToProduct = (id) => {

@@ -19,7 +19,7 @@ export default function Order(props) {
             <View style={styles.containerImage}>
                 <Image
                     style={styles.image}
-                    source={{ uri: `${API_URL}${order.product.main_image.url}` }} />
+                    source={{ uri: `${order.product.main_image.url}` }} />
             </View>
             <View style={styles.info}>
                 <Text

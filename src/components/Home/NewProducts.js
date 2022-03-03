@@ -24,7 +24,7 @@ export default function NewProducts() {
 
 const styles = StyleSheet.create({
     container: {
-        padding: 10,
+        padding: 5,
         marginTop: 20,
     },
     title: {

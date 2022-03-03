@@ -16,7 +16,7 @@ export default function CarouselImages(props) {
         return (
             <Image
                 style={styles.carousel}
-                source={{ uri: `${API_URL}${item.url}` }}
+                source={{ uri: `${item.url}` }}
             />
         )
     }

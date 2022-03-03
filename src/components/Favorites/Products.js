@@ -37,7 +37,7 @@ export default function Products(props) {
     return (
         <View style={styles.products}>
             <View style={styles.containerImage}>
-                <Image style={styles.image} source={{ uri: `${API_URL}${item.product.main_image.url}` }} />
+                <Image style={styles.image} source={{ uri: `${item.product.main_image.url}` }} />
             </View>
             <View style={styles.info}>
                 <View>
